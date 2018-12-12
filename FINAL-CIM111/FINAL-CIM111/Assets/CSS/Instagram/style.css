@@ -1,0 +1,129 @@
+body {
+  font-size: 15px;
+  background-color: #cc0cad;
+}
+
+img {
+  max-width: 90%;
+
+}
+
+
+.wrapper{
+	display: grid;
+	grid-gap: 100px;
+}
+
+/* TOP HEADER SECTION //////////////////// */
+/* This is top header section of the site */
+.top{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		"hero hero cta1"
+		"hero hero cta2"
+}
+
+.li{padding:10px;margin-top:13px;background-color:#ccc15a;}
+
+.frosted{
+	background-color: #782cb4;
+	width: 1000px;
+	height: 100px;
+	padding-left: 5px;
+}
+
+.hero{
+	grid-area: hero;
+	min-height: 1300px;
+	background: #ccc15a;
+	color: black;
+	background-size: cover;
+	background-position: center;
+	padding: 40px;
+	display: grid;
+	justify-content: start;
+    align-content: right;
+}
+
+
+
+
+
+.frosted p{
+	font-size: 11px;
+
+  .menu ul{
+  	display: grid;
+  	padding: 0;
+  	list-style: none;
+  	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+
+
+  .menu a{
+  	color: white;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  		margin-right: 10px;
+  		margin-bottom: 5px;
+
+  	background-color: #6b1513;
+  }
+
+  .features{
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .feature h3{
+  	color: #600b0b;
+  }
+
+  .feature{
+  	background: #a2820f;
+  	padding: 30px;
+  	border: 50px solid white;
+  	text-align: center;
+  }
+
+  .feature {
+  	font-size: 50px;
+  	color: white;
+  }
+
+  .feature p{
+  	color: white;
+  }
+
+
+
+
+  @media (max-width: 200px){
+  	.top{
+  		grid-template-areas:
+  		"hero hero"
+  		"cta1 cta2"
+  	}
+
+
+  	}
+
+
+
+  }
+
+  @media (max-width: 200px){
+  	.top{
+  		grid-template-areas:
+  		"hero"
+  		"cta1"
+  		"cta2"
+  	}
+
+
+  }
+
+
+  }
